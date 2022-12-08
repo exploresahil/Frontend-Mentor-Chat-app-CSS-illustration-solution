@@ -1,0 +1,284 @@
+@use 'variables' as v;
+@use 'globals';
+@use "media";
+
+//*--------------------> Body
+
+body {
+    font-family: v.$ff;
+    width: 100vw;
+    height: 100vh;
+    background-color: v.$bg;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 32em;
+        height: 43.75em;
+        z-index: -1;
+        top: 0;
+        left: -5.8em;
+        background-image: linear-gradient(20deg, v.$g-lv, v.$g-lm);
+        border-bottom-right-radius: 9999em;
+        border-bottom-left-radius: 9999em;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 32em;
+        height: 42.5em;
+        z-index: -1;
+        bottom: 0;
+        right: -11.6em;
+        background-image: linear-gradient(45deg, v.$g-lv, v.$g-lm);
+        border-top-left-radius: 9999em;
+        border-top-right-radius: 9999em;
+        opacity: 0.025;
+    }
+
+    main {
+        height: 800px;
+        gap: 7.875em;
+        padding-left: 6.8em;
+
+        .phone-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4em 0;
+        }
+
+        .phone {
+            display: flex;
+            flex-direction: column;
+            width: 15.5em;
+            height: 31.5em;
+            background-color: v.$bg;
+            border: 10px solid v.$bg;
+            border-radius: 28px;
+            box-shadow: var(--shadow-phone);
+            overflow: hidden;
+            box-shadow: 3px 10px 35px rgba(0, 0, 0, 0.125);
+
+            .phone-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 4.6em;
+                padding: 1.2em 15px 0 15px  ;
+                background-image: linear-gradient(to right, v.$g-lv, v.$g-lm);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                box-shadow: var(--shadow-msg);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 22%;
+                    width: 56%;
+                    height: 1.2em;
+                    background-color: v.$bg;
+                    border-bottom-right-radius: 14px;
+                    border-bottom-left-radius: 14px;
+                }
+
+
+                .bk-btn {
+                    width: 100%;
+
+                    .left {
+                        gap: .5em;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 24px;
+                            border: 1px solid white;
+                        }
+
+                        .name {
+                            gap: .1em;
+
+                            p {
+                                font-size: 0.5rem;
+                                color: white;
+                                
+                                &:nth-of-type(1) {
+                                    font-weight: 500;
+                                    font-size: 0.67rem;
+                                    opacity: 1;
+                                }
+
+                                &:nth-of-type(2){
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .phone-screen {
+                width: 100%;
+                height: 100%;
+                background-color: v.$s-lgv;
+                font-size: .5rem;
+                padding: 1.5em 1em;
+
+                p {
+                    width: 130px;
+                    background-color: #EDE4F5;
+                    padding: 1em 10px 1em 1em;
+                    line-height: 1.2;
+                }
+
+                .text-left {
+                    gap: 1em;
+
+                    p {
+                        border-radius: 8px 8px 8px 4px;
+                        color: v.$t-mv;
+                    }
+
+                    .price {
+                        width: 160px;
+                        background-image: linear-gradient(to left, v.$g-lv, v.$g-lm);
+                        margin: 1em 0;
+                        padding: 1em 2em 1em 1em;
+                        border-radius: 8px 8px 8px 4px;
+
+                        .p-left {
+                            gap: 1em;
+
+                            .circle {
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 12px;
+                                border: 1px solid white;
+                                opacity: 0.75;
+                            }
+
+                            h4 {
+                                color: white;
+                                font-weight: 400;
+                                opacity: 0.75;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 1.5em;
+                            color: white;
+                        }
+                        
+                    }
+                }
+
+                .text-right {
+                    gap: 1em;
+
+                    p {
+                        background-color: v.$bg;
+                        color: v.$t-ddv;
+                        border-radius: 8px 8px 4px 8px;
+                    }
+
+                    p:nth-of-type(2) {
+                        width: max-content;
+                    }
+
+                    .images {
+                        gap: 1em;
+                        img {
+                            height: 5em;
+                            width: auto;
+                            border-radius: 1em;
+                         }
+                    }
+
+                   
+                }
+
+                .phone-type {
+                    width: 100%;
+                    position: relative;
+                    
+                    
+                    input {
+                        height: 34px;
+                        width: 100%;
+                        background-color: white;
+                        border: none;
+                        border-radius: 34px;
+                        padding-left: 1.9em;
+                        font-size: 1.1em;
+                        color: rgba(0, 0, 0, 0.50);
+
+
+                        &:focus {
+                            border: 1px solid v.$g-lm;
+                            outline: 1px solid v.$g-lm;;
+                        }
+                    }
+
+                    .send-icon {
+                        position: absolute;
+                        width: 26px;
+                        height: 26px;
+                        background-color: v.$s-vgdv;
+                        border-radius: 26px;
+                        right: 4px;
+                        bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        .text {
+            width: 28.125em;
+            gap: 1.4em;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: v.$t-vddv;
+            }
+
+            p {
+                color: v.$t-dgv;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+
+
+
+//*--------------------> Attribution
+
+.attribution {
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    bottom: 0;
+    font-size: .8rem;
+    gap: .5rem;
+    opacity: 0.5;
+
+    p {
+        color: black;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+}
+
+

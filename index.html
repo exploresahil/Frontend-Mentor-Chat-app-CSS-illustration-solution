@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+  </head>
+  <body>
+    <main class="flex flex-jc-ctr flex-ai-ctr m-flex-fd-col m-pd-0">
+      <div class="phone-container m-body-mar-t">
+        <div class="phone">
+          <div class="phone-header">
+            <div class="bk-btn flex flex-jc-sb flex-ai-ctr">
+              <div class="left flex flex-ai-ctr">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6.114"
+                    height="10.765"
+                    viewBox="0 0 6.114 10.765"
+                  >
+                    <path
+                      data-name="back arrow"
+                      d="M388.248,1876.317l-4.039,4.733,4.039,4.733"
+                      transform="translate(-382.895 -1875.668)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </a>
+                <img src="/images/avatar.jpg" alt="profile picture" />
+                <div class="name flex flex-fd-col">
+                  <p>Samuel Green</p>
+                  <p>Available to Walk</p>
+                </div>
+              </div>
+              <div class="right">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="8"
+                    viewBox="0 0 3 11"
+                  >
+                    <g data-name="3-dots" transform="translate(-582 -196)">
+                      <circle
+                        id="Ellipse_1"
+                        data-name="Ellipse 1"
+                        cx="1.5"
+                        cy="1.5"
+                        r="1.5"
+                        transform="translate(582 196)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse_2"
+                        data-name="Ellipse 2"
+                        cx="1.5"
+                        cy="1.5"
+                        r="1.5"
+                        transform="translate(582 200)"
+                        fill="#fff"
+                      />
+                      <circle
+                        id="Ellipse_3"
+                        data-name="Ellipse 3"
+                        cx="1.5"
+                        cy="1.5"
+                        r="1.5"
+                        transform="translate(582 204)"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="phone-screen flex flex-fd-col flex-jc-sb">
+            <div class="text-left flex flex-fd-col">
+              <p>That sounds great. I’d be happy with that.</p>
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+            <div class="text-right flex-as-end flex flex-fd-col">
+              <div class="images flex-as-end flex">
+                <img
+                  src="./images/dog-image-1.jpg"
+                  alt="A red-brown dog closup"
+                />
+                <img
+                  src="./images/dog-image-2.jpg"
+                  alt="A red-brown dog on sand"
+                />
+                <img
+                  src="./images/dog-image-3.jpg"
+                  alt="A red-brown dog holding a branch in mouth"
+                />
+              </div>
+              <p class="flex-as-end">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+              <p class="flex-as-end">Can you make it?</p>
+            </div>
+            <div class="text-left">
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+
+              <div class="price flex flex-ai-ctr flex-jc-sb">
+                <div class="p-left flex flex-ai-ctr flex-jc-ctr">
+                  <div class="circle"></div>
+                  <h4>30 minute walk</h4>
+                </div>
+                <h3>$29</h3>
+              </div>
+              <div class="price flex flex-ai-ctr flex-jc-sb">
+                <div class="p-left flex flex-ai-ctr flex-jc-ctr">
+                  <div class="circle"></div>
+                  <h4>1 hour walk</h4>
+                </div>
+                <h3>$49</h3>
+              </div>
+            </div>
+            <form class="phone-type">
+              <input type="text" placeholder="Type a message…" />
+              <a href="#" class="send-icon flex flex-jc-ctr flex-ai-ctr">
+                <svg width="6.561" height="11.225" viewBox="0 0 6.561 11.225">
+                  <path
+                    data-name="Path 2"
+                    d="M574.6,2306.95l3.8,4.2-3.8,4.2"
+                    transform="translate(-573.188 -2305.538)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="text flex flex-fd-col">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </main>
+
+    <footer class="attribution flex flex-jc-ctr flex-ai-ctr">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="./dist/script.js"></script>
+  </body>
+</html>

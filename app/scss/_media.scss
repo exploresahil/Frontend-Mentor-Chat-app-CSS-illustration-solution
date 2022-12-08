@@ -1,0 +1,67 @@
+//*--------------------> mediaQuroes 
+
+//*----------> smartWatch
+
+// @media screen and (max-width: 270px)
+
+//*----------> smallMobile
+
+// @media screen and (min-width: 271px) and (max-width: 360px)
+
+//*----------> largeMobile
+
+@media screen and (max-width: 767px) {
+    .m-flex-fd-col {
+        flex-direction: column;
+    }
+
+    .m-pd-0 {
+        padding: 0;
+    }
+
+    .m-body-mar-t {
+        margin-top: -4em;
+    }
+
+    body {
+        //height: 936px !important;
+        overflow: hidden !important;
+    }
+
+    body::before {
+        left: -20.2em !important;
+        top: -12em !important;
+    }
+    
+    body::after {
+        right: -20em !important;
+        bottom: -11em !important;
+    }
+
+    main {
+        height: 936px !important;
+        width: 100vw !important;
+        gap: 0 !important;
+    }
+
+    .text {
+        text-align: center;
+        padding: 0 4.5em !important;
+    }
+
+    .attribution {
+        font-size: .7rem !important;
+    }
+}
+
+//*----------> Tablets 
+
+// @media screen and (min-width: 768px) and (max-width:1023px)
+
+//*----------> Desktop
+
+// @media screen and (min-width: 1024px) and (max-width:1280px)
+
+//*----------> Largedesktop
+
+// @media screen and (min-width:1280px)

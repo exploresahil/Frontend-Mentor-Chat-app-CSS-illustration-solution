@@ -1,0 +1,71 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+//*--------------------> Flex Styles
+
+.flex {
+    display: flex;
+
+    &-jc-ctr {
+        justify-content: center;
+    }
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
+    &-ai-ctr {
+        align-items: center;
+    }
+
+    &-fd-col {
+        flex-direction: column;
+    }
+
+    &-as-end {
+        align-self: flex-end;
+    }
+}
+
+//*--------------------> Grid Styles
+
+.grid {
+    display: grid;
+
+    &-jc-ctr {
+        justify-content: center;
+    }
+
+    &-pi-ctr {
+        place-items: center;
+    }
+}
+
+

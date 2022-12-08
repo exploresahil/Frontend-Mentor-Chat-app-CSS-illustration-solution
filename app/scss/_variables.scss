@@ -1,0 +1,32 @@
+//*----------> Import Font Family
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+//*----------> Default Font Family
+
+$ff: 'Rubik', sans-serif;
+
+//*----------> Colors
+
+$bg: white;
+
+//*----------> Colors Text
+
+$t-pv: hsl(276, 100%, 81%);
+$t-mv: hsl(276, 55%, 52%);
+$t-ddv: hsl(271, 15%, 43%);
+$t-gb: hsl(206, 6%, 79%);
+$t-vddv: hsl(271, 36%, 24%);
+$t-dgv: hsl(270, 7%, 64%);
+
+//*----------> Colors Secondary
+
+$s-w: hsl(0, 0%, 100%);
+$s-lgv: hsl(270, 20%, 96%);
+$s-vgdv: hsl(271, 36%, 24%);
+$s-vlm: hsl(289, 100%, 72%);
+
+//*----------> Gradient Colors
+
+$g-lm: hsl(293, 100%, 63%);
+$g-lv: hsl(264, 100%, 61%);
