@@ -21,7 +21,7 @@ I hope everyone appreciates my take on this challenge.
 ### Screenshot
 
 - Desktop: [Desktop-Screenshot](./screenshot/screenshot.png)
-- Mobile [Desktop-Screenshot](./screenshot/screenshot-mobile.png)
+- Mobile [Mobile-Screenshot](./screenshot/screenshot-mobile.png)
 
 ### Links
 
